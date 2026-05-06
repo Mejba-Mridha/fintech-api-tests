@@ -1,0 +1,53 @@
+{
+  "_info": {
+    "comment": "This is the EXAMPLE environment file. Replace placeholder values with real ones in your local .env — never commit real values to Git.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/environment.json"
+  },
+  "id": "fintech-api-staging",
+  "name": "Fintech API — Staging",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "https://api.example-fintech.com/v1",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "api_key",
+      "value": "{{API_KEY_FROM_GITHUB_SECRETS}}",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "auth_token",
+      "value": "",
+      "type": "secret",
+      "enabled": true,
+      "description": "Populated automatically by the Login request pre-script"
+    },
+    {
+      "key": "test_user_email",
+      "value": "testuser@example.com",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "test_user_password",
+      "value": "{{TEST_PASSWORD_FROM_GITHUB_SECRETS}}",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "default_account_id",
+      "value": "acc_test_000001",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "default_currency",
+      "value": "USD",
+      "type": "default",
+      "enabled": true
+    }
+  ]
+}

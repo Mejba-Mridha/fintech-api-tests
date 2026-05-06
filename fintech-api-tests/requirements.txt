@@ -1,0 +1,25 @@
+# ─── Core testing ─────────────────────────────────────────────────────────────
+pytest==8.2.2
+pytest-html==4.1.1
+pytest-xdist==3.5.0          # Parallel test execution
+pytest-ordering==0.6          # Control test execution order
+pytest-rerunfailures==14.0    # Auto-retry flaky tests
+
+# ─── Allure reporting ─────────────────────────────────────────────────────────
+allure-pytest==2.13.5
+
+# ─── HTTP client ──────────────────────────────────────────────────────────────
+requests==2.32.3
+urllib3==2.2.2
+
+# ─── Schema & data validation ─────────────────────────────────────────────────
+jsonschema==4.23.0
+pydantic==2.8.2
+
+# ─── Environment & config ─────────────────────────────────────────────────────
+python-dotenv==1.0.1
+faker==26.0.0                 # Generate realistic test data
+
+# ─── Assertions & utilities ───────────────────────────────────────────────────
+deepdiff==7.0.1               # Deep object comparison
+PyYAML==6.0.2

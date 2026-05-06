@@ -1,0 +1,58 @@
+# ─── Secrets & environment ───────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# Postman exports that may contain real tokens / base URLs
+postman/*_real.json
+postman/environment_real.json
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.so
+.installed.cfg
+
+# ─── Virtual environments ─────────────────────────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ─── Testing & reports ────────────────────────────────────────────────────────
+.pytest_cache/
+reports/allure-results/
+reports/allure-report/
+reports/newman/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# ─── IDE & OS ─────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Node (k6 / Newman) ───────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
